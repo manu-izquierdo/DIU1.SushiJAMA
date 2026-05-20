@@ -8,6 +8,14 @@
 
 ---
 
+<div align="center">
+
+## [**🔗 Web SushiJAMA**](https://fix-crayon-77936773.figma.site)
+
+</div>
+
+--- 
+
 ## Proyecto: SushiJAMA
 
 SushiJAMA es un restaurante japonés de temática anime que combina la gastronomía japonesa con un sistema de recompensas físicas mediante Gashapones. A través de la plataforma web, los usuarios acceden a **PakuPaku-Go**, un sistema de fidelización donde cada plato consumido otorga 1, 2 o 3 puntos según su categoría. Al acumular 5 puntos, el cliente consigue un premio aleatorio de la colección temática de esa temporada. Quienes reúnan todos los premios de una colección obtienen una recompensa final exclusiva. El progreso se gestiona desde el perfil del usuario, desde donde también pueden interactuar con la comunidad y votar las temáticas de futuras temporadas.
