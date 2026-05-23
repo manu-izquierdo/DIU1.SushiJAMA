@@ -54,6 +54,7 @@ WAVE detectó **24 errores de contraste en la página Carta** y **16 en Pedir On
 - **Criterio WCAG incumplido:** 1.4.3 — Contraste mínimo (Nivel AA)
 - **Impacto:** Las dos páginas más funcionales de la web — donde el usuario consulta el menú y hace pedidos — son prácticamente ilegibles para usuarios con baja visión, daltonismo o en condiciones de luz solar directa.
 - **Recomendación:** Cambiar el color del texto sobre tarjetas azules a `#0A3D5C` (ratio superior a 7:1) o cambiar el fondo de las tarjetas a `#B8E7FA`. Verificar con el [Contrast Checker de WebAIM](https://webaim.org/resources/contrastchecker/).
+
 **Hallazgo ACC-02 — Imágenes enlazadas sin texto alternativo (en todas las páginas)**
  
 WAVE detectó 2 errores de tipo "Linked image missing alternative text" en todas las páginas analizadas. Se trata de los dos logos del header que actúan como enlace al inicio pero no tienen atributo `alt`.
@@ -61,6 +62,7 @@ WAVE detectó 2 errores de tipo "Linked image missing alternative text" en todas
 - **Criterio WCAG incumplido:** 1.1.1 — Contenido no textual (Nivel A)
 - **Impacto:** Un usuario con lector de pantalla escucha "enlace" sin descripción en cada página. Al ser el header común a toda la web, el error se repite en cada visita.
 - **Recomendación:** Añadir `alt="DorayakiYa - Ir al inicio"` a ambas imágenes enlazadas del header.
+  
 **Hallazgo ACC-03 — 2 etiquetas de formulario ausentes en página Reseñas**
  
 WAVE detectó 2 errores "Missing form label" en la página de Reseñas. Los campos "Tu nombre" y el área de texto para la reseña no tienen etiqueta `<label>` asociada.
@@ -79,6 +81,7 @@ Todas las páginas muestran la alerta "No heading structure". Los títulos visib
 - **Criterio WCAG incumplido:** 2.4.6 — Encabezados y etiquetas (Nivel AA)
 - **Impacto:** Un usuario de lector de pantalla no puede navegar por secciones usando la tecla H, que es la forma más habitual de moverse en webs largas con muchos productos.
 - **Recomendación:** Usar `<h1>` para el título principal de cada página y `<h2>` para los títulos de sección. Especialmente crítico en la página Carta con 8 platos sin título semántico.
+  
 **Hallazgo ACC-05 — Enlace vacío en página Pedir Online**
  
 WAVE detectó 1 "Empty link" en la página Pedir Online. Hay un elemento `<a>` sin texto ni imagen interior, lo que lo hace completamente inaccesible por teclado o lector de pantalla.
@@ -86,6 +89,7 @@ WAVE detectó 1 "Empty link" en la página Pedir Online. Hay un elemento `<a>` s
 - **Criterio WCAG incumplido:** 2.4.4 — Propósito del enlace (Nivel AA)
 - **Impacto:** Un usuario que navega con teclado llegará a ese enlace sin saber qué hace ni poder activarlo conscientemente.
 - **Recomendación:** Eliminar el enlace vacío o añadirle contenido con `aria-label` descriptivo.
+  
 **Hallazgo ACC-06 — 2 enlaces redundantes en todas las páginas**
  
 Todas las páginas tienen 2 enlaces redundantes: el logo y el ítem "Inicio" del menú apuntan a la misma URL. Esto genera duplicidad innecesaria para usuarios de lector de pantalla.
@@ -103,6 +107,7 @@ La página de Reserva muestra un selector de hora con formato AM/PM. En España 
 - **Criterio WCAG relacionado:** 3.2.4 — Identificación consistente (Nivel AA)
 - **Impacto:** Un usuario puede reservar a las 8:00 AM creyendo que reserva a las 20:00. Error funcional directo en la tarea más crítica de la web.
 - **Recomendación:** Cambiar el componente de hora a formato 24h.
+  
 **Hallazgo ACC-08 — 3 textos subrayados que no son enlaces (en todas las páginas)**
  
 Todas las páginas muestran 3 elementos de texto subrayados que no son enlaces. El subrayado es convención universal de enlace.
@@ -120,6 +125,7 @@ Todas las páginas muestran "No page regions". No hay `<main>`, `<nav>`, `<heade
 - **Criterio WCAG incumplido:** 1.3.1 — Información y relaciones (Nivel A)
 - **Impacto:** Los lectores de pantalla no pueden ofrecer navegación por regiones en ninguna página de la web.
 - **Recomendación:** Añadir landmarks HTML5 a toda la estructura en todas las páginas.
+  
 **Hallazgo ACC-10 — Elementos ARIA hidden en todas las páginas**
  
 Se detectaron elementos con `aria-hidden="true"` en todas las páginas (9 en Inicio, 11 en Pedir Online, 3 en Carrito, 3 en Reseñas). Si alguno oculta contenido funcional, genera barreras invisibles.
