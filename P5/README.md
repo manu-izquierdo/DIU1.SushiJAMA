@@ -19,102 +19,86 @@ La metodología combina cuatro pilares: reclutamiento de usuarios, Eye Tracking 
 
 ## 1. Reclutamiento de Usuarios y Diseño del Experimento
 
-### Tareas de prueba
-
-Se definieron 3 tareas para guiar la sesión de cada usuario. Las tareas cubren los flujos principales de DorayakiYa y están diseñadas para aislar variables concretas:
+Se definieron 3 tareas para guiar cada sesión, diseñadas para aislar variables independientes y cubrir los flujos principales de DorayakiYa:
 
 | Tarea | Descripción | Variable que mide |
 |---|---|---|
-| **T1** | Encuentra el plato más caro del menú | Distinción entre "Carta" y "Pide Online", navegación por productos |
-| **T2** | Reserva una mesa para 2 personas este sábado a las 21:00 | Localización de la reserva, comprensión del selector AM/PM |
-| **T3** | Añade un Katsudon al carrito y ve al proceso de pago | Flujo de compra, localización del icono del carrito |
+| **T1** | Encuentra el plato más caro del menú | Distinción entre Carta y Pide Online |
+| **T2** | Reserva una mesa para 2 personas este sábado a las 21:00 | Flujo de reserva, comprensión AM/PM |
+| **T3** | Añade un Katsudon al carrito y ve al proceso de pago | Flujo de compra |
 
-Las sesiones son **supervisadas** (el evaluador observa y anota sin intervenir) con una duración estimada de 5-10 minutos por usuario.
+Las sesiones fueron **supervisadas** con duración de 5-10 minutos. El Eye Tracking se registró de forma simultánea durante las tareas.
 
 ### Tabla de participantes
 
-| ID | Edad | Género | Nivel Digital | Gafas/Lentillas | Exp. previa en tests | Caso evaluado |
+| ID | Edad | Género | Nivel Digital | Gafas/Lentillas | Exp. previa | Caso |
 |---|---|---|---|---|---|---|
-| P01 | | | | | | B |
-| P02 | | | | | | B |
-| P03 | | | | | | B |
-| P04 | | | | | | B |
-| P05 | | | | | | B |
+| P01 | 21 | Hombre | Alto | Sí | Sí | B |
+| P02 | 21 | Mujer | Medio | Sí | No | B |
+| P03 | 20 | Hombre | Alto | No | Sí | B |
+| P04 | 21 | Hombre | Alto | No | Sí | B |
+| P05 | 22 | N/D | Alto | Sí | No | B |
 
-> 📋 Los datos demográficos se recogen a través del formulario Tally al finalizar cada sesión.  
-> 🔗 **Formulario SUS + datos demográficos:** [https://tally.so/r/2EDJBj](https://tally.so/r/2EDJBj)
+📋 [Ver tareas de prueba completas](./tareas_prueba.md)
 
 ---
 
 ## 2. Eye Tracking
 
-Se utilizó **GazeMapping** para analizar el comportamiento visual de los usuarios sobre las páginas principales de DorayakiYa. Se rasterizaron 2 páginas con FireShot y se definieron los siguientes POIs (Puntos de Interés):
+Se utilizó **GazeMapping** para analizar el comportamiento visual sobre las páginas Inicio y Reserva con 3 usuarios por página.
 
-**Página Inicio:**
-- Botón "Pide aquí" (CTA principal)
-- Logo (¿redirige al inicio?)
-- Menú de navegación con dropdown "Ir a..."
+### Página Inicio
 
-**Página Reserva:**
-- Formulario de datos (nombre, email, comensales)
-- Botón "Confirmar Reserva"
-- Selector de fecha y hora
+| Usuario 1 | Usuario 2 | Usuario 3 |
+|---|---|---|
+| ![Heatmap Inicio U1](img/heatmap_inicio_u1.jpg) | ![Heatmap Inicio U2](img/heatmap_inicio_u2.jpg) | ![Heatmap Inicio U3](img/heatmap_inicio_u3.jpg) |
 
-| Heatmap Inicio | Heatmap Reserva |
-|---|---|
-| *(captura pendiente de sesiones)* | *(captura pendiente de sesiones)* |
+- ✅ El botón **"Pide aquí"** recibe atención consistente en todos los usuarios
+- ✅ Las tarjetas de productos de la primera fila concentran la mayor atención visual
+- ⚠️ El menú **"Ir a..."** recibe muy poca atención — los usuarios no lo usan para navegar a Reserva
+- ⚠️ La sección Novedades capta atención pero no genera acción (sin CTA asociado)
 
-### Conclusiones Eye Tracking
+### Página Reserva
 
-> *(Se completará tras las sesiones con usuarios)*
+| Usuario 1 | Usuario 2 | Usuario 3 |
+|---|---|---|
+| ![Heatmap Reserva U1](img/heatmap_reserva_u1.jpg) | ![Heatmap Reserva U2](img/heatmap_reserva_u2.jpg) | ![Heatmap Reserva U3](img/heatmap_reserva_u3.jpg) |
+
+- 🔴 El botón **"Confirmar Reserva"** aparece encima del formulario — los usuarios lo ven antes de rellenar, rompiendo el flujo
+- ⚠️ El selector **AM/PM** genera patrones de duda confirmados por los 3 usuarios
+- ✅ El calendario recibe atención clara y directa
+- ✅ Los campos del formulario siguen un orden de lectura descendente correcto
 
 ---
 
 ## 3. Cuestionario SUS y Análisis A/B
 
-El cuestionario SUS se administró a cada usuario **inmediatamente después** de completar las 3 tareas, sin pausa, para evitar sesgos de memoria.
+El SUS se administró **inmediatamente después** de las tareas. Resultados analizados con **sus.mixality.de**.
 
-Los resultados se analizaron con **sus.mixality.de** para obtener el análisis multivariable.
-
-### Puntuaciones SUS
-
-| Usuario | Caso | Puntuación SUS |
+| Usuario | Puntuación SUS | Etiqueta |
 |---|---|---|
-| P01 | B | |
-| P02 | B | |
-| P03 | B | |
-| P04 | B | |
-| P05 | B | |
-| **Media Caso B** | | |
-| **Media Caso A (SushiJAMA)** | | |
+| P01 | 37.5 | Not Acceptable 🔴 |
+| P02 | 70.0 | Good 🟢 |
+| P03 | 62.5 | Marginal 🟡 |
+| P04 | 75.0 | Good 🟢 |
+| P05 | 90.0 | Excellent 🟢 |
+| **Media Caso B** | **67.0** | **Marginal** |
 
-> *(Se completará tras las sesiones con usuarios)*
-
-### Comparativa A/B
-
-> *(Gráfico y conclusiones pendientes de datos SUS)*
-
-La media de referencia del SUS es **68 puntos**. Puntuaciones por encima indican usabilidad aceptable; por debajo, señalan problemas que requieren atención.
+La media de **67/100** queda 1 punto por debajo del umbral de aceptabilidad (68). La **Pregunta 5** (integración de funciones) es el ítem peor valorado con un 80% de respuestas negativas, apuntando directamente a la confusión entre Carta y Pide Online.
 
 ---
 
 ## 4. Auditoría de Accesibilidad
 
-Se realizó una auditoría completa de las 5 páginas principales de DorayakiYa usando **Google Lighthouse** y **WAVE**.
+| Página | Lighthouse | WAVE AIM |
+|---|---|---|
+| Inicio | 82/100 | 9.3/10 ✅ |
+| Carta | — | 4.0/10 🔴 |
+| Pedir Online | — | 5.2/10 🟠 |
+| Carrito | — | 9.1/10 ✅ |
+| Reseñas | — | 8.1/10 ✅ |
 
-### Resultados globales
-
-| Página | WAVE AIM Score | Errores | Errores Contraste |
-|---|---|---|---|
-| Inicio | 9.3 / 10 ✅ | 2 | 0 |
-| Carta | 4.0 / 10 🟠 | 2 | 24 |
-| Pedir Online | 5.2 / 10 🟡 | 3 | 16 |
-| Carrito | 9.1 / 10 ✅ | 2 | 0 |
-| Reseñas | 8.1 / 10 ✅ | 4 | 0 |
-
-**Lighthouse Accessibility Score (Inicio):** 82/100
-
-Los principales hallazgos son errores de contraste en las tarjetas de la página Carta y Pedir Online, ausencia de semántica HTML estructural (headings, landmarks) y dos imágenes enlazadas sin texto alternativo en el header.
+Los errores más graves son los **24 errores de contraste en la página Carta** y la **ausencia de estructura semántica HTML** en toda la web.
 
 📄 [Ver Accessibility Report completo](./Accessibility_Report_Dorayakiya.md)
 
@@ -122,16 +106,12 @@ Los principales hallazgos son errores de contraste en las tarjetas de la página
 
 ## 5. Usability Report
 
-El informe de usabilidad completo centrado en el **Caso B (DorayakiYa)** incluye resumen ejecutivo, metodología, resultados SUS, análisis de Eye Tracking, auditoría de accesibilidad y tabla de recomendaciones priorizadas.
-
-📄 [Ver Usability Report](./P4_UsabReport_Dorayakiya_doneby_DIU1_SushiJAMA.md)
-
-> *(Se completará tras el análisis de datos)*
+📄 [Ver Usability Report completo](./Usability_Report_Dorayakiya.md)
 
 ---
 
 ## Conclusiones
 
-> *(Se completará al finalizar la práctica)*
+La evaluación de DorayakiYa ha confirmado que las técnicas de UX Research combinadas aportan más información que cualquiera por separado. El SUS identificó la confusión entre Carta y Pide Online; el Eye Tracking localizó el problema concreto del botón mal posicionado en la Reserva; y la auditoría de accesibilidad reveló que los errores más graves se concentran precisamente en la página más visitada.
 
-La evaluación cruzada con DorayakiYa nos ha permitido aplicar de forma práctica las técnicas de UX Research aprendidas durante el curso. El proceso de diseñar las tareas, reclutar usuarios y analizar los resultados con herramientas estandarizadas como SUS nos ha dado una perspectiva objetiva sobre qué aspectos de un diseño impactan realmente en la experiencia del usuario final.
+El proceso nos ha enseñado que pequeñas decisiones de layout (la posición de un botón respecto a un formulario) tienen un impacto real y medible en la experiencia del usuario, algo que no habría sido evidente sin el apoyo de datos biométricos. La metodología UX aplicada de forma sistemática permite tomar decisiones de diseño con evidencia, no con intuición.
