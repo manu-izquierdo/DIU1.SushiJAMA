@@ -85,7 +85,7 @@ Llevamos el diseño Hi-Fi a una web funcional y publicada, manteniendo el sistem
 
 Evaluamos la usabilidad del proyecto **DorayakiYa** (DIU1.Zipizape) como Caso B mediante un estudio A/B con 5 usuarios reales. Se combinaron tres técnicas: cuestionario SUS, Eye Tracking con GazeMapping sobre las páginas Inicio y Reserva, y auditoría de accesibilidad con Lighthouse y WAVE sobre las 5 páginas principales.
 
-La puntuación SUS media obtenida fue de **67/100** (franja Marginal, 1 punto por debajo del umbral de aceptabilidad). Los heatmaps confirmaron dos problemas críticos: el menú dropdown es ignorado por los usuarios y el botón "Confirmar Reserva" está posicionado antes del formulario, rompiendo el flujo de reserva. La página Carta obtuvo un AIM Score de **4/10** por contraste insuficiente en las tarjetas de producto.
+La puntuación SUS media obtenida fue de **75/100** (franja Good, por encima del umbral de aceptabilidad). Los heatmaps confirmaron dos problemas críticos: el menú dropdown es ignorado por los usuarios y el botón "Confirmar Reserva" está posicionado antes del formulario, rompiendo el flujo de reserva. La página Carta obtuvo un AIM Score de **4/10** por contraste insuficiente en las tarjetas de producto.
 
 | | |
 |---|---|
