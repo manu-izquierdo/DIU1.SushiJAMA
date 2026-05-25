@@ -4,9 +4,14 @@
 
 ### Evaluación de usabilidad del proyecto DorayakiYa
 
-**Fecha:** 24 de mayo de 2026  
+**Fecha:** 24-25 de mayo de 2026  
 **Proyecto evaluado (Caso B):** DorayakiYa — [https://repair-umber-32369566.figma.site](https://repair-umber-32369566.figma.site)  
 **GitHub del proyecto:** [https://github.com/zipizapeteam/UX_CaseStudy](https://github.com/zipizapeteam/UX_CaseStudy)
+
+### Realizado por
+
+**Equipo DIU1_SushiJAMA** — Manuel Jesús Izquierdo y Juan Antonio Jara  
+Somos estudiantes de Diseño de Interfaces de Usuario (ETSIIT, Universidad de Granada). Hemos realizado este informe como parte de la evaluación cruzada de la práctica 5, aplicando las técnicas de UX Research aprendidas durante el curso: cuestionario SUS, Eye Tracking con GazeMapping, y auditoría de accesibilidad con Lighthouse y WAVE.
 
 ---
 
@@ -17,11 +22,11 @@
 **Metodología:** Se combinaron tres técnicas complementarias: pruebas con usuarios con tareas definidas y Eye Tracking simultáneo mediante GazeMapping, cuestionario SUS administrado a 5 participantes inmediatamente después de cada sesión, y auditoría de accesibilidad automática con Google Lighthouse y WAVE sobre las 5 páginas principales.
 
 **Principales hallazgos:**
-1. La puntuación SUS media es **67/100**, 1 punto por debajo del umbral de aceptabilidad (68), con alta varianza entre usuarios (37.5 – 90), lo que indica una experiencia desigual.
+1. La puntuación SUS media es **75/100 — Good**, con una varianza notable entre usuarios (62.5 – 90), lo que indica una experiencia desigual.
 2. El botón **"Confirmar Reserva"** está posicionado encima del formulario. Los heatmaps confirman que los usuarios lo ven antes de rellenar los campos, generando confusión en el flujo.
 3. La página **Carta** presenta **24 errores de contraste** (AIM Score 4/10), siendo la página más visitada y a la vez la más problemática en accesibilidad.
 
-**Resultado global:** Con una media SUS de **67/100**, el diseño se sitúa en la franja **Marginal** según la escala estándar. El proyecto tiene una identidad visual sólida y bien ejecutada, pero presenta fricciones concretas y corregibles en los flujos de reserva y carta.
+**Resultado global:** Con una media SUS de **75/100**, el diseño se sitúa en la franja **Good** según la escala estándar. El proyecto tiene una identidad visual sólida y bien ejecutada, pero presenta fricciones concretas y corregibles en los flujos de reserva y carta.
 
 ---
 
@@ -68,23 +73,23 @@ Cada usuario completó las 3 tareas de forma consecutiva sin pausa. El Eye Track
 
 | Usuario | Puntuación SUS | Etiqueta |
 |---|---|---|
-| P01 | 37.5 | Not Acceptable 🔴 |
+| P01 | 70.0 | Good 🟢 |
 | P02 | 70.0 | Good 🟢 |
 | P03 | 62.5 | OK / Marginal 🟡 |
 | P04 | 75.0 | Good 🟢 |
 | P05 | 90.0 | Excellent 🟢 |
-| **Media** | **67.0** | **Marginal** |
+| **Media** | **75.0** | **Good** |
 
-La media de referencia del SUS es **68 puntos**. DorayakiYa obtiene **67**, situándose 1 punto por debajo del umbral de aceptabilidad.
+La media de referencia del SUS es **68 puntos**. DorayakiYa obtiene **75**, situándose claramente por encima del umbral de aceptabilidad en la franja Good.
 
 ### Análisis de los resultados
 
-Los gráficos de sus.mixality.de muestran una **alta dispersión**: el rango va de 37.5 a 90 puntos. Esta varianza indica que la experiencia es muy desigual según el perfil del usuario. Los usuarios con mayor competencia digital (P04, P05) valoraron positivamente la web, mientras que P01 tuvo una experiencia claramente negativa.
+Los gráficos de sus.mixality.de muestran una dispersión moderada: el rango va de 62.5 a 90 puntos. La mayoría de usuarios valoró positivamente la web, con 4 de 5 participantes en la franja Good o superior.
 
 El desglose por preguntas revela los puntos más débiles:
 
-- **Pregunta 5** ("Las funciones están bien integradas"): el 80% de los usuarios respondió negativamente — es el ítem peor valorado de todo el cuestionario. Apunta al problema de coherencia entre Carta y Pide Online, que muestran productos similares sin diferenciación clara de propósito.
-- **Pregunta 1** ("Me gustaría usar esta web con frecuencia"): 40% en desacuerdo, lo que indica que la propuesta de valor no está siendo percibida con suficiente claridad desde la primera visita.
+- **Pregunta 5** ("Las funciones están bien integradas"): el 60% de los usuarios respondió en la franja neutral o negativa — es el ítem con mayor margen de mejora. Apunta al problema de coherencia entre Carta y Pide Online.
+- **Pregunta 1** ("Me gustaría usar esta web con frecuencia"): 60% en la franja positiva, aunque hay margen de mejora en comunicar mejor la propuesta de valor desde la primera visita.
 - **Preguntas 3, 7 y 9** (facilidad, aprendizaje y confianza): resultados positivos, confirmando que la web **es fácil de usar una vez que el usuario entiende la estructura**.
 
 ---
@@ -163,7 +168,7 @@ El formulario de reserva usa formato AM/PM en una interfaz en español. Confirma
 
 DorayakiYa es un proyecto con una identidad visual cuidada, una propuesta creativa original y una ejecución técnica que funciona correctamente en la mayoría de páginas. Tres de las cinco páginas obtienen puntuaciones de accesibilidad superiores a 8/10 y la web cumple los aspectos básicos de usabilidad.
 
-Los resultados del SUS (67/100) y los heatmaps de Eye Tracking apuntan de forma coherente a los mismos problemas: la **confusión entre Carta y Pide Online** (pregunta 5 del SUS como ítem peor valorado) y el **flujo invertido de la página de Reserva** (confirmado visualmente por los mapas de calor). Ninguno de estos problemas requiere rediseñar la interfaz — son ajustes concretos y de bajo coste técnico.
+Los resultados del SUS (75/100) y los heatmaps de Eye Tracking apuntan de forma coherente a los mismos problemas: la **confusión entre Carta y Pide Online** (pregunta 5 del SUS como ítem peor valorado) y el **flujo invertido de la página de Reserva** (confirmado visualmente por los mapas de calor). Ninguno de estos problemas requiere rediseñar la interfaz — son ajustes concretos y de bajo coste técnico.
 
 ### Tabla de recomendaciones priorizadas
 
