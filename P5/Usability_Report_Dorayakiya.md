@@ -4,14 +4,9 @@
 
 ### Evaluación de usabilidad del proyecto DorayakiYa
 
-**Fecha:** 24-25 de mayo de 2026  
+**Fecha:** 24 de mayo de 2026  
 **Proyecto evaluado (Caso B):** DorayakiYa — [https://repair-umber-32369566.figma.site](https://repair-umber-32369566.figma.site)  
 **GitHub del proyecto:** [https://github.com/zipizapeteam/UX_CaseStudy](https://github.com/zipizapeteam/UX_CaseStudy)
-
-### Realizado por
-
-**Equipo DIU1_SushiJAMA** — Manuel Jesús Izquierdo y Juan Antonio Jara  
-Somos estudiantes de Diseño de Interfaces de Usuario (ETSIIT, Universidad de Granada). Hemos realizado este informe como parte de la evaluación cruzada de la práctica 5, aplicando las técnicas de UX Research aprendidas durante el curso: cuestionario SUS, Eye Tracking con GazeMapping, y auditoría de accesibilidad con Lighthouse y WAVE.
 
 ---
 
