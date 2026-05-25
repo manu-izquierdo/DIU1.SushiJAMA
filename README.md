@@ -83,14 +83,22 @@ Llevamos el diseño Hi-Fi a una web funcional y publicada, manteniendo el sistem
 
 ### [Práctica 5 · Evaluación: A/B Testing y Accesibilidad](./P5/README.md)
 
-Evaluación del prototipo con usuarios reales mediante cuestionario SUS, Eye Tracking con GazeMapping y análisis de accesibilidad WCAG. Se realizará una co-evaluación cruzada con otro grupo de clase (Caso B).
+Evaluamos la usabilidad del proyecto **DorayakiYa** (DIU1.Zipizape) como Caso B mediante un estudio A/B con 5 usuarios reales. Se combinaron tres técnicas: cuestionario SUS, Eye Tracking con GazeMapping sobre las páginas Inicio y Reserva, y auditoría de accesibilidad con Lighthouse y WAVE sobre las 5 páginas principales.
 
-> 🚧 En desarrollo
+La puntuación SUS media obtenida fue de **67/100** (franja Marginal, 1 punto por debajo del umbral de aceptabilidad). Los heatmaps confirmaron dos problemas críticos: el menú dropdown es ignorado por los usuarios y el botón "Confirmar Reserva" está posicionado antes del formulario, rompiendo el flujo de reserva. La página Carta obtuvo un AIM Score de **4/10** por contraste insuficiente en las tarjetas de producto.
 
-📄 [Ver README completo P5](./P5/README.md)
+| | |
+|---|---|
+| ![Heatmap Inicio](./P5/img/heatmap_inicio_u3.jpg) | ![Heatmap Reserva](./P5/img/heatmap_reserva_u3.jpg) |
+
+📄 [Ver README completo P5](./P5/README.md)  
+📄 [Ver Usability Report](./P5/Usability_Report_Dorayakiya.md)  
+📄 [Ver Accessibility Report](./P5/Accessibility_Report_Dorayakiya.md)
 
 ---
 
 ## Conclusiones del proyecto
 
-SushiJAMA ha supuesto un recorrido completo por la metodología UX: desde identificar un nicho real en el mercado de restauración japonesa hasta publicar una web funcional que lo materializa. Lo más valioso del proceso fue comprobar que las decisiones tomadas en las primeras fases —especialmente la arquitectura de información y el Design System— tienen un impacto directo en la velocidad y coherencia de todo lo que viene después. El sistema PakuPaku-Go, que parecía un añadido complejo al principio, acabó siendo el elemento que más diferencia al proyecto y el que más interés genera en los usuarios con los que hemos hablado.
+SushiJAMA ha supuesto un recorrido completo por la metodología UX: desde identificar un nicho real en el mercado de restauración japonesa hasta publicar una web funcional y evaluarla con usuarios reales. Lo más valioso del proceso fue comprobar que las decisiones tomadas en las primeras fases —especialmente la arquitectura de información y el Design System— tienen un impacto directo en la velocidad y coherencia de todo lo que viene después.
+
+La práctica 5 cerró el ciclo de forma especialmente reveladora: evaluar el proyecto de otros compañeros con las mismas técnicas que habríamos aplicado a SushiJAMA nos permitió ver con distancia cómo pequeñas decisiones de layout (la posición de un botón, la ambigüedad entre dos páginas con propósito similar) generan fricciones reales y medibles. El sistema PakuPaku-Go, que parecía un añadido complejo al principio, acabó siendo el elemento que más diferencia al proyecto y el que más interés genera en los usuarios con los que hemos hablado.
