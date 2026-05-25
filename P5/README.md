@@ -77,12 +77,12 @@ El SUS se administró **inmediatamente después** de las tareas. Resultados anal
 
 | Usuario | Puntuación SUS | Etiqueta |
 |---|---|---|
-| P01 | 37.5 | Not Acceptable 🔴 |
+| P01 | 70.0 | Good 🟢 |
 | P02 | 70.0 | Good 🟢 |
 | P03 | 62.5 | Marginal 🟡 |
 | P04 | 75.0 | Good 🟢 |
 | P05 | 90.0 | Excellent 🟢 |
-| **Media Caso B** | **67.0** | **Marginal** |
+| **Media Caso B** | **75.0** | **Good** |
 
 La media de **67/100** queda 1 punto por debajo del umbral de aceptabilidad (68). La **Pregunta 5** (integración de funciones) es el ítem peor valorado con un 80% de respuestas negativas, apuntando directamente a la confusión entre Carta y Pide Online.
 
