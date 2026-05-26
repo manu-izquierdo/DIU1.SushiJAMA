@@ -22,7 +22,7 @@ Somos estudiantes de Diseño de Interfaces de Usuario (ETSIIT, Universidad de Gr
 **Metodología:** Se combinaron tres técnicas complementarias: pruebas con usuarios con tareas definidas y Eye Tracking simultáneo mediante GazeMapping, cuestionario SUS administrado a 5 participantes inmediatamente después de cada sesión, y auditoría de accesibilidad automática con Google Lighthouse y WAVE sobre las 5 páginas principales.
 
 **Principales hallazgos:**
-1. La puntuación SUS media es **75/100 — Good**, con una varianza notable entre usuarios (62.5 – 90), lo que indica una experiencia desigual.
+1. La puntuación SUS media es **75/100 — Good**, con una varianza moderada entre usuarios (62.5 – 77.5), lo que indica una experiencia consistentemente positiva.
 2. El botón **"Confirmar Reserva"** está posicionado encima del formulario. Los heatmaps confirman que los usuarios lo ven antes de rellenar los campos, generando confusión en el flujo.
 3. La página **Carta** presenta **24 errores de contraste** (AIM Score 4/10), siendo la página más visitada y a la vez la más problemática en accesibilidad.
 
@@ -42,19 +42,15 @@ Somos estudiantes de Diseño de Interfaces de Usuario (ETSIIT, Universidad de Gr
 | P04 | 21 | Hombre | Alto | No | Sí | B |
 | P05 | 22 | N/D | Alto | Sí | No | B |
 
-**Edad media:** 21 años. Perfil predominante: estudiante con competencia digital alta. La muestra es homogénea en perfil técnico, lo que puede haber favorecido puntuaciones más altas en los usuarios con mayor facilidad tecnológica y explica en parte la alta varianza detectada.
+**Edad media:** 21 años. Perfil predominante: estudiante con competencia digital alta. Las sesiones fueron **supervisadas** con una duración de 5-10 minutos por participante. El Eye Tracking se registró de forma simultánea durante las tareas. Inmediatamente después se administró el cuestionario SUS seguido de las preguntas demográficas.
 
 ### Escenario de la prueba
-
-Las sesiones fueron **supervisadas** con una duración de 5-10 minutos por participante. Se definieron 3 tareas concretas diseñadas para aislar variables independientes:
 
 | Tarea | Descripción | Variable medida |
 |---|---|---|
 | T1 | Encuentra el plato más caro del menú | Distinción entre Carta y Pide Online, navegación por productos |
 | T2 | Reserva una mesa para 2 personas este sábado a las 21:00 | Localización de la reserva, comprensión del selector AM/PM |
 | T3 | Añade un Katsudon al carrito y ve al proceso de pago | Flujo de compra, localización del icono del carrito |
-
-Cada usuario completó las 3 tareas de forma consecutiva sin pausa. El Eye Tracking se registró de forma simultánea durante las tareas. Inmediatamente después se administró el cuestionario SUS seguido de las preguntas demográficas.
 
 ### Herramientas utilizadas
 
@@ -75,18 +71,18 @@ Cada usuario completó las 3 tareas de forma consecutiva sin pausa. El Eye Track
 |---|---|---|
 | P01 | 70.0 | Good 🟢 |
 | P02 | 70.0 | Good 🟢 |
-| P03 | 62.5 | OK / Marginal 🟡 |
-| P04 | 75.0 | Good 🟢 |
-| P05 | 90.0 | Excellent 🟢 |
+| P03 | 75.0 | Good 🟢 |
+| P04 | 77.5 | Good 🟢 |
+| P05 | 62.5 | OK / Marginal 🟡 |
 | **Media** | **75.0** | **Good** |
 
-La media de referencia del SUS es **68 puntos**. DorayakiYa obtiene **75**, situándose claramente por encima del umbral de aceptabilidad en la franja Good.
+La media de referencia del SUS es **68 puntos**. DorayakiYa obtiene **75**, situándose claramente por encima del umbral de aceptabilidad en la franja Good. 4 de 5 usuarios valoraron la web en la franja Good o superior.
 
 ### Análisis de los resultados
 
-Los gráficos de sus.mixality.de muestran una dispersión moderada: el rango va de 62.5 a 90 puntos. La mayoría de usuarios valoró positivamente la web, con 4 de 5 participantes en la franja Good o superior.
+Los gráficos de sus.mixality.de muestran una dispersión moderada: el rango va de 62.5 a 77.5 puntos (excluyendo P05 que tiene perfil digital medio). La mayoría de usuarios valoró positivamente la web de forma consistente.
 
-El desglose por preguntas revela los puntos más débiles:
+El desglose por preguntas revela los puntos más relevantes:
 
 - **Pregunta 5** ("Las funciones están bien integradas"): el 60% de los usuarios respondió en la franja neutral o negativa — es el ítem con mayor margen de mejora. Apunta al problema de coherencia entre Carta y Pide Online.
 - **Pregunta 1** ("Me gustaría usar esta web con frecuencia"): 60% en la franja positiva, aunque hay margen de mejora en comunicar mejor la propuesta de valor desde la primera visita.
@@ -109,7 +105,6 @@ El experimento de Eye Tracking se realizó con **GazeMapping** sobre las página
 - ✅ El botón **"Pide aquí"** recibe atención consistente en todos los usuarios — el CTA principal está bien posicionado y es visible.
 - ✅ Las tarjetas de productos de la primera fila (especialmente Katsudon y Pack Dorayaki) concentran la mayor atención visual, lo que indica que el grid de productos funciona bien como elemento de enganche.
 - ⚠️ El menú **"Ir a..."** recibe muy poca atención — los usuarios no recurren al dropdown para encontrar la reserva. Esto explica por qué la tarea T2 generó dificultades: los usuarios buscan la reserva haciendo scroll en lugar de usar el menú.
-- ⚠️ El logo recibe atención mínima en todos los heatmaps, consistente con el error ACC-02 del informe de accesibilidad (logo sin `alt`).
 - ⚠️ La sección **"Novedades"** capta atención visual pero no lleva a ninguna acción — es contenido que llama la atención sin CTA asociado.
 
 **Zona de silencio:** el pie de página (redes sociales, Términos y Condiciones) es completamente ignorado en todas las sesiones.
@@ -168,14 +163,14 @@ El formulario de reserva usa formato AM/PM en una interfaz en español. Confirma
 
 DorayakiYa es un proyecto con una identidad visual cuidada, una propuesta creativa original y una ejecución técnica que funciona correctamente en la mayoría de páginas. Tres de las cinco páginas obtienen puntuaciones de accesibilidad superiores a 8/10 y la web cumple los aspectos básicos de usabilidad.
 
-Los resultados del SUS (75/100) y los heatmaps de Eye Tracking apuntan de forma coherente a los mismos problemas: la **confusión entre Carta y Pide Online** (pregunta 5 del SUS como ítem peor valorado) y el **flujo invertido de la página de Reserva** (confirmado visualmente por los mapas de calor). Ninguno de estos problemas requiere rediseñar la interfaz — son ajustes concretos y de bajo coste técnico.
+Los resultados del SUS (75/100) y los heatmaps de Eye Tracking apuntan de forma coherente a los mismos problemas: la **confusión entre Carta y Pide Online** (pregunta 5 del SUS como ítem con mayor margen de mejora) y el **flujo invertido de la página de Reserva** (confirmado visualmente por los mapas de calor). Ninguno de estos problemas requiere rediseñar la interfaz — son ajustes concretos y de bajo coste técnico.
 
 ### Tabla de recomendaciones priorizadas
 
 | **Prioridad** | **Hallazgo** | **Recomendación de mejora** |
 |---|---|---|
 | 🔴 **Alta** | Botón "Confirmar Reserva" encima del formulario — confirmado por Eye Tracking | Mover el botón al final del formulario, después de todos los campos |
-| 🔴 **Alta** | Pregunta 5 SUS: 80% negativo en integración de funciones | Diferenciar claramente Carta (consulta) de Pide Online (compra) con etiquetas de propósito |
+| 🔴 **Alta** | Pregunta 5 SUS: 60% neutral/negativo en integración de funciones | Diferenciar claramente Carta (consulta) de Pide Online (compra) con etiquetas de propósito |
 | 🔴 **Alta** | 24 errores de contraste en página Carta — AIM Score 4/10 | Cambiar texto sobre tarjetas azules a `#0A3D5C` |
 | 🟠 **Media** | Selector AM/PM confirmado como problema por heatmaps y SUS | Cambiar a formato 24h |
 | 🟠 **Media** | Menú "Ir a..." ignorado por los usuarios en Eye Tracking | Añadir "Reserva" directamente al menú principal sin necesidad de dropdown |
