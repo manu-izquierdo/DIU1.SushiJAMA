@@ -84,7 +84,7 @@ El SUS se administró **inmediatamente después** de las tareas. Resultados anal
 | P05 | 90.0 | Excellent 🟢 |
 | **Media Caso B** | **75.0** | **Good** |
 
-La media de **67/100** queda 1 punto por debajo del umbral de aceptabilidad (68). La **Pregunta 5** (integración de funciones) es el ítem peor valorado con un 80% de respuestas negativas, apuntando directamente a la confusión entre Carta y Pide Online.
+La media de 75/100 supera el umbral de aceptabilidad (68), situándose en la franja Good. La **Pregunta 5** (integración de funciones) es el ítem peor valorado con un 80% de respuestas negativas, apuntando directamente a la confusión entre Carta y Pide Online.
 
 ---
 
